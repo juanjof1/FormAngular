@@ -1,0 +1,42 @@
+<div>
+  <h1>Registro de libros</h1>
+
+  <div>
+    <label>Nombre del Libro:</label>
+    <input type="text" {{ngModel}} />
+  </div>
+</div>
+
+<div>
+  <label>Año del libro</label>
+  <input type="text" {{ngModel}}="year" />
+</div>
+
+<div>
+  <label>Description del libro</label>
+  <textarea [(ng Model)]="description"></textarea>
+</div>
+
+<div>
+  <label>Fue Vendido</label>
+  <input type="checkbox" {{ngModel}}="isSold" />
+</div>
+
+<hr />
+
+<div>
+  <label>Nombre del auto:</label>
+  <input type="date" {{ngModel}}="userBirthday" />
+</div>
+
+<div>
+  <label>Fecha de naciemiento del autor</label>
+  <input type="datetime" {{ngModel}}="fechanacimiento" />
+</div>
+
+<div>
+  <label>País del autor: </label>
+  <input type="text" [(ngModel)]="country" />
+</div>
+
+<button (click)="onClick()">Registrarse</button>
